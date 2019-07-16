@@ -10,23 +10,33 @@
 </head>
 <body>
     <div class="header-container">
-        <div class="img-brand">
-            <img src="images/logo.png" alt="Pulse Electronics" width="104" height="104">
-        </div>
-        <div class="brand-name">
-            <h1>Pulse Online Store</h1>
-        </div>
-        <div class="login-form-container" style="width:35%">
-          <fieldset>
-          <legend>Log in</legend>
-          <form class="login-form">
-              Email ID:<input type = "email" name="Email ID">
-              Password:<input type = "password" name="psw"><br>
-              <input type = "submit" value="submit">
-              <input type="reset">
-          </form>
-          </fieldset>
-        </div>
+      <table>
+        <tr>
+          <td>
+              <div class="img-brand" style="width: 15%">
+                  <img src="../images/logo.png" alt="Pulse Electronics" width="150" height="150">
+              </div>
+          </td>
+          <td>
+              <div class="brand-name" style="width: 100%">
+                  <h1>Pulse Online Store</h1>
+              </div>
+          </td>
+          <td>
+              <div class="login-form-container" style="width:35%">
+                  <fieldset>
+                  <legend>Log in</legend>
+                  <form class="login-form" style="text-align-last: left">
+                      Email ID:<input type = "email" name="Email ID">
+                      Password:<input type = "password" name="psw"><br>
+                      <input type = "submit" value="submit">
+                      <input type="reset">
+                  </form>
+                  </fieldset>
+                </div>
+          </td>
+        </tr>
+      </table>
     </div>
 
     
@@ -43,61 +53,84 @@
     <input type="submit" name="submit-category">
 
     <h1>Today's Offers</h1>
-    <div class="card">
-      <a href="html/samsung.html">
-      <img src="images/samsung/SSD_2.jpg" alt="Samsung Evo 1TB 2.5 SSD" width="300px">
-    </a>
-      <div class="container">
-        <h4> <b>Samsung Evo 1TB 2.5 internal SSD</b></h4>
-        <b><p>$230</p></b>
-        <button class="button1" type="button" name="Add to cart">Add to cart</button>
-        <button class="button1" type="button" name="Buy Now" style="margin-top: 10px">Buy Now</button>
-      </div>
-    </div>
-    <br>
 
-    <div class="card">
-      <a href="html/bose.html">
-          <img src="images/bose/bose.png" alt="Bose Truly Wireless in-ear headphones" width="300px">
-      </a>
-      <div class="container">
-        <h4> <b>Bose Truly Wireless in-ear headphones</b></h4>
-        <b><p>$125</p></b>
-        <button class="button1" type="button" name="Add to cart">Add to cart</button>
-        <button class="button1" type="button" name="Buy Now">Buy Now</button>
-      </div>
-    </div>
-    <br>
-    <div class="card">
+    <table align="center">
+      <tr>
+        <td>
+            <div class="card">
+                <a href="html/samsung.html">
+                <img src="images/samsung/SSD_2.jpg" alt="Samsung Evo 1TB 2.5 SSD" width="350px" style="padding-top: 15px">
+              </a>
+                <div class="container">
+                  <h4> <b>Samsung Evo 1TB 2.5 internal SSD</b></h4>
+                  <b><p>$230</p></b>
+                  <button class="button1" type="button" name="Add to cart">Add to cart</button><br><br>
+                  <button class="button1" type="button" name="Buy Now" style="margin-top: 10px">Buy Now</button><br><br>
+                </div>
+              </div>
+        </td>
+        <td>
+            <div class="card">
+                <a href="html/bose.html">
+                    <img src="images/bose/bose.png" alt="Bose Truly Wireless in-ear headphones" width="300px">
+                </a>
+                <div class="container">
+                  <h4> <b>Bose Truly Wireless in-ear headphones</b></h4>
+                  <b><p>$125</p></b>
+                  <button class="button1" type="button" name="Add to cart">Add to cart</button><br><br>
+                  <button class="button1" type="button" name="Buy Now">Buy Now</button><br><br>
+                </div>
+              </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+ <div class="card">
       <a href="html/boat.html">
-        <img src="images/boat/boat1.jpg" alt="boAt Rockerz 255 Bluetooth Earphones" width="300px">
+        <img src="images/boat/boat1.jpg" alt="boAt Rockerz 255 Bluetooth Earphones" width="300px" height="300px" style="padding-top: 15px">
       </a>
       <div class="container">
         <h4><b>boAt Truly Wireless earphones</b></h4>
         <b><p>$23</p></b>
-        <button class="button1" type="button" name="Add to cart">Add to cart</button>
-        <button class="button1" type="button" name="Buy Now">Buy Now</button>
+        <button class="button1" type="button" name="Add to cart">Add to cart</button><br><br>
+        <button class="button1" type="button" name="Buy Now">Buy Now</button><br><br>
       </div>
-    </div>
-
-    <br>
-
-    <div class="card">
+        </td>
+        <td>
+ <div class="card">
       <a href="html/y530.html">
-        <img src="images/y530/y5301.jpeg" alt="Lenovo Legion Y530" width="300px">
+        <img src="images/y530/y5301.jpeg" alt="Lenovo Legion Y530" width="300px" style="padding: 15px">
       </a>
       <div class="container">
         <h4><b>Lenovo Legion Y530 Gaming Laptop</b></h4>
         <b><p>$1500</p></b>
-        <button class="button1" type="button" name="Add to cart">Add to cart</button>
-        <button class="button1" type="button" name="Buy Now">Buy Now</button>
+        <button class="button1" type="button" name="Add to cart">Add to cart</button><br><br>
+        <button class="button1" type="button" name="Buy Now">Buy Now</button><br><br>
       </div>
     </div>
+        </td>
+      </tr>
+    </table>
+
+    
+    <br>
+
+    
+    <br>
+   
+    </div>
+
+    <br>
+
+   
 
 <footer>
-  <h3>Pulse Elecronic Stores</h3>
-  <b>Address</b>
-  <h5>302, Jai Shankar<br>Tanaje Nagar, Dhanakawadi<br>411046<br>Contact : 1233423223</h5>
+  <div class="Address">
+      <h3>Pulse Elecronic Stores</h3>
+      <b>Address</b>
+      <address>302, Jai Shankar<br>Tanaje Nagar, Dhanakawadi<br>411046<br>Contact : 1233423223</address>
+  </div>
+  
 </footer>
 </body>
 </html>

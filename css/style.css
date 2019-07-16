@@ -17,7 +17,8 @@
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 350px;
+  width: 450px;
+  height: 600px;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -67,8 +68,8 @@
 
 
 /* The CSS for footer is not working*/
-.footer {
-  text-align: right;
+footer {
+  text-align: left;
   background-color: #24527a;
   color: white;
 }
