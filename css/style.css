@@ -8,15 +8,33 @@
 }
 
 .brand-name {
-  font: "Bookman";
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
   align-items: center;
 }
 
 .login-form-container {
   text-align: right;
 }
+
+#category-drop-down{
+  width: 200px;
+}
+
+.column{
+  float: left;
+  width: 50%
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   width: 450px;
   height: 600px;
   margin: auto;
