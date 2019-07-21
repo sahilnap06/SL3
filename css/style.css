@@ -10,8 +10,10 @@
 .brand-name {
   font-size: 20px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   align-items: center;
+  word-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 .login-form-container {
@@ -27,6 +29,7 @@
   width: 50%
 }
 
+
 .row:after{
   content: "";
   display: table;
@@ -40,6 +43,12 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+  margin-bottom: 55px;
+}
+
+#zoom:hover{
+  transition-duration: 300ms;
+  transform: scale(1.2);
 }
 
 .card button {
@@ -90,6 +99,9 @@ footer {
   text-align: left;
   background-color: #24527a;
   color: white;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
