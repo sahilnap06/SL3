@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<time></time>
 
 <head>
   <meta charset="UTF-8">
@@ -13,41 +12,42 @@
 
 <body>
   <div class="header-container">
-    <table>
-      <tr>
-        <td>
-          <div class="img-brand" style="width: 15%; text-align: center;">
-            <img src="images/logo.png" alt="Pulse Electronics" width="150" height="150">
-          </div>
-        </td>
-        <td>
-          <div class="brand-name" style="width: 100%; margin-left: 400px; padding-right: 100px">
-            <h1>Pulse Online Store</h1>
-          </div>
-        </td>
-        <td>
-          <div class="login-form-container" style="width:35%; margin-left: 300px">
-            <fieldset>
-              <legend>Log in</legend>
-              <form class="login-form" style="text-align-last: left">
-                Email ID:<input type="email" name="Email ID"><br>
-                Password:<input type="password" name="psw"><br>
-                <input type="submit" value="submit">
-                <input type="reset">
-              </form>
-            </fieldset>
-          </div>
-        </td>
-      </tr>
-    </table>
+    <div class="row1">
+      <div class="column1 left">
+        <div class="img-brand" style="width: 15%; text-align: center;">
+          <img src="images/logo.png" alt="Pulse Electronics" width="150" height="150">
+        </div>
+      </div>
+      <div class="column1 middle">
+        <div class="brand-name" style="width: 100%;text-align: center;padding-top: 25px;">
+          <h1>Pulse Online Store</h1>
+        </div>
+      </div>
+      <div class="column1 right">
+        <div class="login-form-container">
+          <fieldset>
+            <legend style="text-align: left;">Log in</legend>
+            <form class="login-form" style="text-align-last: left">
+              Email ID : <input type="email" name="Email ID"><br>
+              Password : <input type="password" name="psw"><br>
+              <input type="submit" value="Submit" style="text-align: center">
+              <input type="reset" value="Reset" style="text-align: center">
+            </form>
+            <p style="text-align: left;">Not a customer?? Sign up <a href="newCustomer.html"
+                style="color: red;">here</a></p>
+          </fieldset>
+        </div>
+      </div>
+    </div>
   </div>
 
-  
   <div class="search-category" style="text-align: center">
     <h4><br>Search as per<span style="color: red"> category</span> </h4>
     <input type="text" name="category-drop-down" list="category-drop-down">
     <datalist id="category-drop-down">
-      <option value="Hard Disks">
+      <a href="/html/harddisks.html">
+        <option value="Hard Disks">
+      </a>
       <option value="Mobiles">
       <option value="Earphones">
       <option value="Bluetooth Earphones">
@@ -62,7 +62,8 @@
     <div class="column">
       <div class="card">
         <a href="html/samsung.html">
-          <img id="zoom" src="images/samsung/SSD_2.jpg" alt="Samsung Evo 1TB 2.5 SSD" width="350px" style="padding-top: 15px">
+          <img id="zoom" src="images/samsung/SSD_2.jpg" alt="Samsung Evo 1TB 2.5 SSD" width="350px"
+            style="padding-top: 15px">
         </a>
         <div class="container">
           <h4> <b>Samsung Evo 1TB 2.5 internal SSD</b></h4>
@@ -96,7 +97,8 @@
       <div class="column">
         <div class="card">
           <a href="html/boat.html">
-            <img id="zoom" src="images/boat/boat1.jpg" alt="boAt Rockerz 255 Bluetooth Earphones" width="300px" height="300px" style="padding-top: 55px">
+            <img id="zoom" src="images/boat/boat1.jpg" alt="boAt Rockerz 255 Bluetooth Earphones" width="300px"
+              height="300px" style="padding-top: 55px">
           </a>
           <div class="container">
             <h4><b>boAt Truly Wireless earphones</b></h4>
@@ -111,7 +113,8 @@
       <div class="column">
         <div class="card">
           <a href="html/y530.html">
-            <img id="zoom" src="images/y530/y5301.jpeg" alt="Lenovo Legion Y530" width="300px" style="padding-top: 55px">
+            <img id="zoom" src="images/y530/y5301.jpeg" alt="Lenovo Legion Y530" width="300px"
+              style="padding-top: 55px">
           </a>
           <div class="container">
             <h4><b>Lenovo Legion Y530 Gaming Laptop</b></h4>
