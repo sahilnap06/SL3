@@ -8,9 +8,12 @@
   <title>Pulse Electronics</title>
   <link rel="stylesheet" href="css/newCustomer.css">
   <link rel="icon" type="images/png" href="images/logo.png">
+<<<<<<< HEAD
 
 <script src="javascript/validate.js"></script>
 
+=======
+>>>>>>> 701111dbce2af94354c8d0c7623ce71b97068f8e
 </head>
 
 <body>
@@ -38,6 +41,7 @@
         <h2 style="text-align: center">Sign Up</h2>
         <form action="" name="signupform" onsubmit="return validateForm()" method="post">
           First Name<span style="color: red">*</span> : <input type="text" class="user-details" name="fname"
+<<<<<<< HEAD
             placeholder="First name"><p id="fname"></p> &nbsp;
           Last Name<span style="color: red">*</span> : <input type="text" class="user-details" name="lname"
             placeholder="Last name"><p id="lname"></p> <br>
@@ -58,6 +62,26 @@
             name="pincode"><p id="pincode"></p> <br>
           <div class="stateofdelivery">
             State : <input type="text" list="state" class="user-details" name="state">
+=======
+            placeholder="First name">&nbsp;
+          Last Name<span style="color: red">*</span> : <input type="text" class="user-details" name="lname"
+            placeholder="Last name"><br>
+          Email ID<span style="color: red">*</span> : <input type="email" class="user-details" name="mailid"
+            placeholder="Email ID" style="width: 200px"><br>
+          <p style="font-size: 20px"> Primary shipping address : </p><br>
+          Address Line 1<span style="color: red">*</span>:<input type="text" class="user-details" name="address"
+            placeholder="Address line 1 (Flat no., House No,Building,etc)" style="width: 400px"><br>
+          Address Line 2<span style="color: red">*</span> : <input type="text" class="user-details" name="address"
+            placeholder="Address line 2 (Locality)" style="width: 400px"><br>
+          Address Line 3<span style="color: red">*</span> : <input type="text" class="user-details" name="address"
+            placeholder="Address line 3 (city)" style="width: 400px"><br>
+          Landmark (optional): <input type="text" class="user-details" name="landmark" placeholder="Landmark (optional)"
+            style="width: 300px"><br>
+          City<span style="color: red">*</span> : <input type="text" class="city">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Pin Code<span style="color: red">*</span> : <input type="number" class="addressMain" name="pincode"><br>
+          <div class="stateofdelivery">
+            State : <input type="text" list="state" class="addressMain" name="state">
+>>>>>>> 701111dbce2af94354c8d0c7623ce71b97068f8e
             <datalist id="state">
               <option value="Goa">
               <option value="Maharashtra">
@@ -65,7 +89,11 @@
             </datalist><br>
           </div>
           Contact No.<span style="color: red">*</span> : <input type="number" class="user-details" name="phone"
+<<<<<<< HEAD
             placeholder="Mobile No. 1"><p id="phone"></p>
+=======
+            placeholder="Mobile No. 1">
+>>>>>>> 701111dbce2af94354c8d0c7623ce71b97068f8e
           &emsp;Alternative contact no. <input type="number" class="user-details" name="altphone"
             placeholder="Mobile No. 2">
           <br>
@@ -73,9 +101,15 @@
           Gender : &nbsp;&nbsp;<input type="radio" name="gender" id="male">Male &emsp;<input type="radio" name="gender"
             id="female">Female<br>
           Date Of Birth : <input type="date" id="birthdate" style="padding-bottom: 2px;padding-top: 4px;"><br>
+<<<<<<< HEAD
           <input type="checkbox" name="acceptTNC">I agree to all the<a href="tnc.html"
             style="text-decoration: underline;color: blue"> terms and conditions</a><span
             style="color: red">*</span><p id="tnc"></p> <br>
+=======
+          <input type="checkbox" id="acceptTNC">I agree to all the<a href="tnc.html"
+            style="text-decoration: underline;color: blue"> terms and conditions</a><span
+            style="color: red">*</span><br>
+>>>>>>> 701111dbce2af94354c8d0c7623ce71b97068f8e
           <p style="font-style: oblique"><span style="color: red">*</span> marks mandatory fields.<br></p>
           <input type="submit">
           <input type="reset">
@@ -87,3 +121,52 @@
 </body>
 
 </html>
+<<<<<<< HEAD
+=======
+
+<script>
+  function validateForm() {
+    var x = document.forms["signupform"]["fname"].value;
+    if (x == "") {
+      alert("First name cannot be empty");
+      return false;
+    }
+    x = document.forms["signupform"]["lname"].value;
+    if (x == "") {
+      alert("Last name cannot be empty");
+      return false;
+    }
+    x = document.forms["signupform"]["mailid"].value;
+    if (x == "") {
+      alert("Please enter correct mail ID");
+      return false;
+    }
+    x = document.forms["signupform"]["lname"].value;
+    if (x == "") {
+      alert("Last name cannot be empty");
+      return false;
+    }
+    var check = document.getElementsByName("address").value;
+    for (var i = 0; i < check.length; i++) {
+      if (check[i] == "") {
+        alert("Address must not be empty!");
+        return false;
+      }
+    }
+    x = document.forms["signupform"]["city"].value;
+    if (x == "") {
+      alert("Please enter city name!");
+      return false;
+    }
+    x = document.forms["signupform"]["pincode"].value;
+    if (x == "") {
+      alert("Please enter Zip code");
+      return false;
+    }
+    if (x.value.length == 6) {
+      alert("Please enter correct zip code!!");
+      return false;
+    }
+  }
+</script>
+>>>>>>> 701111dbce2af94354c8d0c7623ce71b97068f8e
