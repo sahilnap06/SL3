@@ -1,0 +1,104 @@
+.header-container {
+    background-color: #24527a;
+    color: white;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.column1 {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 20%;
+}
+
+.middle {
+    width: 60%;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition-duration: 300ms;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -35%);
+    margin-top: 30px;
+    overflow: auto;
+    height: 550px;
+}
+
+.form-container:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition-duration: 300ms;
+}
+
+h2 {
+    padding: 5px 0px 15px 15px;
+    font-family: cursive;
+}
+
+form {
+    padding: 15px;
+}
+
+.user-details,
+.addressMain {
+    padding: 8px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgba(128, 125, 125, 0.171);
+}
+
+input:focus {
+    border: none;
+    border-bottom: 2px solid #24527a;
+}
+
+input[type=submit],
+input[type=reset] {
+    border: none;
+    background-color: #24527a;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+    color: white;
+}
+
+#fname,
+#lname,
+#addressl1,
+#addressl2,
+#addressl3,
+#pincode,
+#city,
+#phone,
+#mailid,#tnc{
+    display: inline;
+    color: red;
+    font-style: italic;
+    font-size: 10px;
+}
+
+#tnc{
+    padding-left: 6px;
+}

@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -20,17 +20,39 @@
   text-align: right;
 }
 
-#category-drop-down{
+#category-drop-down {
   width: 200px;
 }
 
-.column{
+.column1 {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 20%;
+}
+
+.middle {
+  width: 60%;
+}
+
+.right {
+  width: 20%;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
   float: left;
   width: 50%
 }
 
-
-.row:after{
+.row:after {
   content: "";
   display: table;
   clear: both;
@@ -46,9 +68,20 @@
   margin-bottom: 55px;
 }
 
-#zoom:hover{
+#zoom:hover {
   transition-duration: 300ms;
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+input[type=submit],
+input[type=reset] {
+  border: wheat;
+  background-color: white;
+  text-align: center;
+  padding: 3px;
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
 }
 
 .card button {
@@ -63,34 +96,38 @@
   font-size: 18px;
 }
 
-.category-drop-down{
+.category-drop-down {
   text-align: center;
 }
 
 .card button:hover {
   opacity: 0.7;
 }
+
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+  padding-top: 20ox;
 }
 
-.button1{
- border: none;
- color: white;
- padding: 15px 32px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 16px;
- -webkit-transition-duration: 0.4s; /* Safari */
+.button1 {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
 }
 
-.button1:hover{
-  background-color: rgb(0, 132, 255); /* Green */
+.button1:hover {
+  background-color: rgb(0, 132, 255);
+  /* Green */
   color: white;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -108,7 +145,9 @@ footer {
 /*
 * Added CSS for the slideshow
 */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -123,7 +162,8 @@ footer {
 }*/
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -145,8 +185,9 @@ footer {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -181,7 +222,8 @@ footer {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -194,11 +236,21 @@ footer {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
