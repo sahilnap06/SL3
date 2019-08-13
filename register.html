@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pulse Electronics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/newCustomer.css">
+    <link rel="icon" type="images/png" href="images/logo.png">
+    <script src="javascript/regi.js"></script>
+    <!-- <script src="javascript/validate.js"></script> -->
+
+</head>
+
+<body>
+    <form class="was-validated" action="">
+        <div class="form-group">
+            <label for="mailid">Email ID</label> :
+            <input type="email" class="form-control" name="mailid" placeholder="Email ID" required>
+            <div class="invalid-feedback">The Email ID cannot be empty.</div>
+            <div class="valid-feedback"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="pswd">Please enter your password</label> :
+            <input type="password" class="form-control" name="pswd" placeholder="Password" required>
+            <div class="invalid-feedback">The Password cannot be empty.</div>
+            <div class="valid-feedback"></div>
+        </div>
+        <div class="form-group">
+            <label for="cnfpswd">Confirm your password</label> : 
+            <input type="password" class="form-control" name="cnfpswd" placeholder="Confirm your password" onkeydown="valid_pass();" required>
+            <div class="invalid-feedback">The password cannot be empty.</div>
+        </div>
+        <div id="not-equal"></div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</body>
+
+</html>
