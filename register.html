@@ -10,38 +10,84 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
+
     <link rel="stylesheet" href="css/newCustomer.css">
     <link rel="icon" type="images/png" href="images/logo.png">
     <script src="javascript/regi.js"></script>
     <!-- <script src="javascript/validate.js"></script> -->
+    <style>
+        input[type="email"],
+        input[type="password"] {
+            width: 350px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
 
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            position: fixed;
+            width: 550px;
+            height: 500px;
+            top: 40%;
+            left: 50%;
+            margin-top: -100px;
+            /* Negative half of height. */
+            margin-left: -250px;
+            /* Negative half of width. */
+        }
+        button{
+            position: fixed;
+            left: 50%;
+        }
+    </style>
 </head>
 
 <body>
-    <form class="was-validated" action="">
-        <div class="form-group">
-            <label for="mailid">Email ID</label> :
-            <input type="email" class="form-control" name="mailid" placeholder="Email ID" required>
-            <div class="invalid-feedback">The Email ID cannot be empty.</div>
-            <div class="valid-feedback"></div>
-        </div>
+    <div class="header-container">
         
-        <div class="form-group">
-            <label for="pswd">Please enter your password</label> :
-            <input type="password" class="form-control" name="pswd" placeholder="Password" required>
-            <div class="invalid-feedback">The Password cannot be empty.</div>
-            <div class="valid-feedback"></div>
+        <div class="row1">
+            <div class="column1 left">
+                <div class="img-brand" style="width: 15%; text-align: center;">
+                    <img src="images/logo.png" alt="Pulse Electronics" width="150" height="150">
+                </div>
+            </div>
+            <div class="column1 middle">
+                <div class="brand-name" style="width: 100%;text-align: center;padding-top: 25px;">
+                    <h1>Pulse Online Store</h1>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="cnfpswd">Confirm your password</label> : 
-            <input type="password" class="form-control" name="cnfpswd" placeholder="Confirm your password" onkeydown="valid_pass();" required>
-            <div class="invalid-feedback">The password cannot be empty.</div>
-        </div>
-        <div id="not-equal"></div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
 
+    <div class="card">
+            <h1 style="text-align: center;padding-top: 30px;">Register</h1>
+        <form class="was-validated" action=" " name="registernew" style="margin-left: 50px">
+            <div class="form-group" >
+                <label for="mailid">Email ID</label> :
+                <input type="email" class="form-control" name="mailid" placeholder="Email ID" required>
+                <div class="invalid-feedback">The Email ID cannot be empty.</div>
+                <div class="valid-feedback"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="pswd">Please enter your password</label> :
+                <input type="password" class="form-control" name="pswd" placeholder="Password" onkeyup="valid_pass()" required>
+                <div class="invalid-feedback">The Password cannot be empty.</div>
+                <div class="valid-feedback"></div>
+            </div>
+            <div class="form-group">
+                <label for="cnfpswd">Confirm your password</label> :
+                <input type="password" class="form-control" name="cnfpswd" placeholder="Confirm your password"
+                    onkeyup="valid_pass();" required>
+                <div class="invalid-feedback">The password cannot be empty.</div>
+                <div id="not-equal"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
 </body>
 
 </html>

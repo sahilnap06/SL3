@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pulse Electronics</title>
+  <link rel="stylesheet" href="css/newCustomer.css">
+  <link rel="icon" type="images/png" href="images/logo.png">
+
+<script src="javascript/validate.js"></script>
+
+</head>
+
+<body>
+  <div class="header-container">
+    <div class="row1">
+      <div class="column1 left">
+        <a href="index.html">
+          <div class="img-brand" style="width: 15%; text-align: center;">
+            <img src="images/logo.png" alt="Pulse Electronics" width="150" height="150">
+          </div>
+        </a>
+      </div>
+      <div class="column1 middle">
+        <div class="brand-name" style="width: 100%;text-align: center;padding-top: 25px;">
+          <h1>Pulse Online Store</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <div class="row1">
+      <div class="column1">
+
+        <h2 style="text-align: center">Sign Up</h2>
+        <form action="" name="signupform" onsubmit="return validateForm()" method="post">
+          First Name<span style="color: red">*</span> : <input type="text" class="user-details" name="fname"
+            placeholder="First name" style="width: 200px"><p id="fname"></p> &nbsp; <br>
+          Last Name<span style="color: red">*</span> : <input type="text" class="user-details" name="lname"
+            placeholder="Last name" style="width: 200px"><p id="lname"></p> <br>
+          Email ID<span style="color: red">*</span> : <input type="email" class="user-details" name="mailid"
+            placeholder="Email ID" style="width: 200px"> &nbsp <p id="mailid"></p> <br>
+          <p style="font-size: 20px"> Primary shipping address : </p><br>
+          Address Line 1<span style="color: red">*</span>:<input type="text" class="user-details" name="addressl1"
+            placeholder="Address line 1 (Flat no., House No,Building,etc)" style="width: 400px"><p id="addressl1"></p><br>
+          Address Line 2<span style="color: red">*</span> : <input type="text" class="user-details" name="addressl2"
+            placeholder="Address line 2 (Locality)" style="width: 400px"><p id="addressl2"></p> <br>
+          Address Line 3<span style="color: red">*</span> : <input type="text" class="user-details" name="addressl3"
+            placeholder="Address line 3 (city)" style="width: 400px"><p id="addressl3"></p> <br>
+          Landmark (optional): <input type="text" class="user-details" name="landmark" placeholder="Landmark (optional)"
+            style="width: 300px"><br>
+          City<span style="color: red">*</span> : <input type="text" class="user-details" name="city"><p id="city"></p> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Pin Code<span style="color: red">*</span> : <input type="number" class="user-details"
+            name="pincode"><p id="pincode"></p> <br>
+          <div class="stateofdelivery">
+            State : <input type="text" list="state" class="user-details" name="state">
+            <datalist id="state">
+              <option value="Goa">
+              <option value="Maharashtra">
+              <option value="Madhya Pradesh">
+            </datalist><br>
+          </div>
+          Contact No.<span style="color: red">*</span> : <input type="number" class="user-details" name="phone"
+            placeholder="Mobile No. 1"><p id="phone"></p>
+          &emsp;Alternative contact no. <input type="number" class="user-details" name="altphone"
+            placeholder="Mobile No. 2">
+          <br>
+          <p style="font-size: 20px">Other Information</p>
+          Gender : &nbsp;&nbsp;<input type="radio" name="gender" id="male">Male &emsp;<input type="radio" name="gender"
+            id="female">Female<br>
+          Date Of Birth : <input type="date" id="birthdate" style="padding-bottom: 2px;padding-top: 4px;"><br>
+          <input type="checkbox" name="acceptTNC">I agree to all the<a href="tnc.html"
+            style="text-decoration: underline;color: blue"> terms and conditions</a><span
+            style="color: red">*</span><p id="tnc"></p> <br>
+          <p style="font-style: oblique"><span style="color: red">*</span> marks mandatory fields.<br></p>
+          <input type="submit">
+          <input type="reset">
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
