@@ -70,11 +70,11 @@
                     <div>
                         <label for="fname">First name :</label>
                         <input type="text" class="form-control" name="fname" placeholder="First name">
-                        <span style="color: crimson"><?php echo $fnameErr; ></span>
-
+                        <span style="color: crimson"><?php echo $fnameErr; ?></span>
                     </div>
+
                     <div>
-                        <input type="submit" class="btn btn-primary" value="Sign Up">
+                        <input type="submit" class="btn btn-info" value="Sign Up">
                     </div>
                 </form>
             </div>

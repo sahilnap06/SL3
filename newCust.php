@@ -12,28 +12,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/newCustomer.css">
     <link rel="icon" type="images/png" href="images/logo.png">
-</head>
+    
+</head>  
 
 <body>
-    <div class="header-container">
-        <div class="row1">
-            <div class="column1 left">
-                <div class="img-brand" style="width: 15%; text-align: center;">
-                    <img src="images/logo.png" alt="Pulse Electronics" width="150" height="150">
-                </div>
-            </div>
-            <div class="column1 middle">
-                <div class="brand-name" style="width: 100%;text-align: center;padding-top: 25px;">
-                    <h1>Pulse Online Store</h1>
-                </div>
-            </div>
-            <div class="column1 right"></div>
-        </div>
-    </div>
 
-    <div class="card container" style="margin-top: 30px; width: 70%; margin-bottom: 35px;">
-        <h2 style="text-align: center; margin: 30px;">Sign Up to Pulse Electronics</h2>
-        <form class="needs-validated" action="">
+<?php echo "HELLO WORLD" ?>
+
+    <div class="container">
+        <form class="was-validated" action="">
             <div class="form-group">
                 <label for="fname">First Name<span style="color: red">*</span></label> :
                 <input type="text" class="form-control" name="fname" placeholder="First name" required>
@@ -55,62 +42,39 @@
             <div class="form-group">
                 <label for="addressl1">Address Line 1<span style="color: red">*</span></label> :
                 <input type="text" class="form-control" name="addressl1"
-                    placeholder="Address line 1 (Flat no., House No,Building,etc)" required>
+                    placeholder="Address line 1 (Flat no., House No,Building,etc)" style="width: 400px" required>
                 <div class="invalid-feedback">The address cannot be empty.</div>
                 <div class="valid-feedback"></div>
             </div>
             <div class="form-group">
                 <label for="addressl2">Address Line 2<span style="color: red">*</span></label> :
                 <input type="text" class="form-control" name="addressl2" placeholder="Address line 2 (Locality)"
-                    required>
+                    style="width: 400px" required>
                 <div class="invalid-feedback">The address cannot be empty.</div>
             </div>
             <div class="from-group">
                 <label for="addressl3">Address Line 3<span style="color: red">*</span></label> :
-                <input type="text" class="form-control" name="addressl3" placeholder="Address line 3 (city)" required>
+                <input type="text" class="form-control" name="addressl3" placeholder="Address line 3 (city)"
+                    style="width: 400px" required>
                 <div class="invalid-feedback">The address cannot be empty.</div>
             </div>
-            <div class="form-grou<a href="tnc.html"> terms and
-                conditions.</a>p">
-                <label for="state">State<span style="color: red">*</span></label> :
-                <input type="text" class="form-control" name="state" placeholder="State name" required>
-                <div class="invalid-feedback">The state name cannot be empty.</div>
+            <div class="form-group">
+                <label for="city">City<span style="color: red">*</span></label> :
+                <input type="text" class="form-control" name="city" required>
+                <div class="invalid-feedback">The city name cannot be empty.</div>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" name="remember" required> I agree to the <a href="tnc.html"> terms and
-                        conditions.</a>
+                    <input class="form-check-input" type="checkbox" name="remember" required> I agree to the terms and
+                    conditions.
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback">Check this checkbox to continue.</div>
                 </label>
             </div>
-
-            <div style="text-align: center;"><button type="submit" class="btn btn-outline-primary">Submit</button></div>
-
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
 
     </div>
 </body>
-
-<script>
-    // Disable form submissions if there are invalid fields
-    (function () {
-        'use strict';
-        window.addEventListener('load', function () {
-            // Get the forms we want to add validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                }, false);
-            });
-        }, false);
-    })();
-</script>
 
 </html>
